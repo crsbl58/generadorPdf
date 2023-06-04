@@ -1,0 +1,11 @@
+@import "../../../styles/functions/index.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #3c515d;
+  padding: toRem(3) 0 toRem(3) toRem(20);
+  > h3 {
+    color: white;
+  }
+}

@@ -1,0 +1,4 @@
+INPUT_DIR= ./input
+API_KEY=bf43916b-fb1c-4a4c-8d3c-c73ebe4dbf39
+SECRET=f415f4c0-c0b4-403b-a53a-d74aee402c34
+API_PORT=4507

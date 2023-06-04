@@ -1,0 +1,20 @@
+.UploadImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    >span {
+      color: #a7c686;
+      transition: .3s;
+      &:hover{
+        color: #fcee8c;
+        cursor: pointer;
+      }
+    }
+  }
+}

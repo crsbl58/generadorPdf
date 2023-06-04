@@ -1,0 +1,27 @@
+.divContainerImgSlider00 {
+  overflow: hidden;
+  .divContainerImgSlider01 {
+    width: 45rem;
+    height: 25.3rem;
+    display: flex;
+    flex-flow: row nowrap;
+
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+    > div {
+      > img {
+        width: 45rem;
+        height: 25.3rem;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+/* @keyframes anima {
+  100% {
+    transform: translate(-400%, 0);
+  }
+  
+} */
