@@ -66,15 +66,21 @@ const GeneratorExcel = () => {
       </div>
       <button
         onClick={() => {
-          setStateArrayExcel([
-            ...stateArrayExcel,
-            {
-              id: stateArrayExcel.length + 1,
-              date: stateInputExcel.date,
-              typeExam: stateInputExcel.typeExam,
-              result: stateInputExcel.result,
-            },
-          ]);
+          if (
+            stateInputExcel.date.length > 0 &&
+            stateInputExcel.typeExam.length &&
+            stateInputExcel.result.length
+          ) {
+            setStateArrayExcel([
+              ...stateArrayExcel,
+              {
+                id: stateArrayExcel.length + 1,
+                date: stateInputExcel.date,
+                typeExam: stateInputExcel.typeExam,
+                result: stateInputExcel.result,
+              },
+            ]);
+          }
         }}
       >
         Agregar Examen

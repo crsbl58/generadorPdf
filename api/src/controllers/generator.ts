@@ -4,7 +4,6 @@ import dirPath from "path";
 
 const generatePdf = async (req: any, res: any) => {
   const data = req.body;
-  console.log(data);
 
   const html = `
   <html>
@@ -165,12 +164,13 @@ const generatePdf = async (req: any, res: any) => {
 const generateExcel = async (req: any, res: any) => {
   let arrayy = [{ id: 0, date: "10/20/2023", result: "asd" }];
 
-  const data = req.body.map((item:any)=>{return{date:item.date, typeExam:item.typeExam, result:item.result}});
-  console.log(data);
+  const data = req.body.map((item: any) => {
+    return { date: item.date, typeExam: item.typeExam, result: item.result };
+  });
 
   await createExcel("Historial", data);
 
-  res.status(200).json({state:true});
+  res.status(200).json({ state: true });
 };
 
 export { generatePdf, generateExcel };
@@ -184,27 +184,13 @@ const createExcel = (sheetLabel: string, data: any) => {
     const ws: any = XLSX.utils.book_new();
     const wb = { Sheets: { [sheetName]: ws }, SheetNames: [sheetName] };
 
-    const wscols = [
-      { wch: 10 },
-      { wch: 15 },
-      { wch: 10 },
-    ];
+    const wscols = [{ wch: 10 }, { wch: 15 }, { wch: 10 }];
 
     ws["!cols"] = wscols;
 
-    XLSX.utils.sheet_add_aoa(
-      ws,
-      [
-        [
-          "Fecha",
-          "Tipo de Examen",
-          "Resultado",
-        ],
-      ],
-      {
-        origin: "A1",
-      }
-    );
+    XLSX.utils.sheet_add_aoa(ws, [["Fecha", "Tipo de Examen", "Resultado"]], {
+      origin: "A1",
+    });
 
     const worksheet = XLSX.utils.sheet_add_json(ws, data, {
       origin: "A2",
@@ -214,16 +200,11 @@ const createExcel = (sheetLabel: string, data: any) => {
     const pdfPath = dirPath.join(__dirname, "./../../", "output");
 
     XLSX.writeFile(wb, dirPath.join(pdfPath, `${fileName}.${fileExtension}`));
-    
-    resolve("")
+
+    resolve("");
     return {
       success: true,
       error: null,
     };
-   
-  
   });
-  
-   
-
 };
