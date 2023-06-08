@@ -1,26 +1,16 @@
 import express from "express";
-import session from "express-session";
 import cors from "cors";
 import dirPath from "path";
-
-import { auth } from "./middlewares";
 import * as routes from "./routes";
-import config from "./utils/config";
+
 
 class App {
   public server: any;
 
   constructor() {
     this.server = express();
-    this.session();
     this.middlewares();
     this.routes();
-  }
-
-  session() {
-    this.server.use(
-      session({ secret: config.secret, resave: true, saveUninitialized: true })
-    );
   }
 
   middlewares() {
