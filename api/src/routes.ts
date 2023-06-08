@@ -1,3 +1,3 @@
-import ImageRouter from "./routes/image";
+import GeneratorRouter from "./routes/generator";
 
-export { ImageRouter };
+export { GeneratorRouter };

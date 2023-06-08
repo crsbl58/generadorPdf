@@ -6,7 +6,7 @@ import styles from "./template.module.scss";
 
 const Template = ({ children }: { children: any }) => {
   return (
-    <Screen background="linear-gradient(90deg, rgba(59,59,59,1) 16%, rgba(38,151,159,1) 88%)">
+    <Screen>
       <div className={styles.template00}>
         <Header />
         <div className={styles.template02}>

@@ -1,4 +1,3 @@
-import useStore from "./useStore";
-import useImage from "./useImage";
+import useGenerator from "./useGenerator";
 
-export { useStore, useImage };
+export { useGenerator };

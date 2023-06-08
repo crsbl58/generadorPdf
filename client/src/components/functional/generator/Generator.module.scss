@@ -1,0 +1,135 @@
+.container {
+  padding: 2rem 0 2rem 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  > div {
+    padding: 0.5rem;
+    border: solid 0.1rem #b5b6b6;
+    width: 33rem;
+
+    .groupBox {
+      padding: 0.5rem;
+      border: solid 0.1rem #b5b6b6;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  > .containerPdf {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    > h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    > .containerTablaPdf {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 0.5rem;
+      > div {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+  > .containerExcel {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    > div:nth-child(2) {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    > h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    .table {
+      display: flex;
+      flex-flow: column nowrap;
+
+      > div:nth-child(1) {
+        display: flex;
+        border: solid 0.1rem #b5b6b6;
+        padding: 0.5rem;
+        > h3 {
+          text-align: center;
+          width: 33.3%;
+        }
+      }
+      > div:nth-child(2) {
+        display: flex;
+        flex-flow: column nowrap;
+        border: solid 0.1rem #b5b6b6;
+        height: 8.4rem;
+        overflow: scroll;
+        > div {
+          padding: 0.2rem;
+          display: flex;
+          flex-flow: row nowrap;
+          transition: 0.3s;
+          &:hover {
+            background-color: aquamarine;
+            cursor: pointer;
+          }
+          > h3 {
+            text-align: center;
+            width: 33.3%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    > div {
+      width: 95vw;
+    }
+    > .containerPdf {
+      > .containerTablaPdf {
+        > div {
+          display: flex;
+          flex-flow: column nowrap;
+        }
+      }
+    }
+    > .containerExcel {
+      > div:nth-child(2) {
+        display: flex;
+        flex-flow: column nowrap;
+
+        justify-content: center;
+      }
+      .table {
+        overflow: scroll;
+        > div:nth-child(1) {
+          width: 38.3rem;
+        }
+        > div:nth-child(2) {
+          width: 38.3rem;
+          > div {
+        
+            > h3 {
+              text-align: center;
+              width: 33.3%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

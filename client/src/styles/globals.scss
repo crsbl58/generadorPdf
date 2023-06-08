@@ -1,11 +1,7 @@
-@import url(./fonts/Inter);
-@import url(./fonts/Quicksand/);
-@import url(./fonts/Oswald);
-@import url(./fonts/Ubuntu);
 @import url(./fonts/material-icons);
 @import url(./fonts/material-symbols-outlined);
 @import url(./fonts/material-symbol-sharp);
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 @import "./functions/index.scss";
 
 html,
@@ -21,12 +17,13 @@ body,
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Oswald";
+  font-family: Montserrat, sans-serif;
   box-sizing: border-box;
   font-size: toRem(18);
-  font-weight: 300;
+  font-weight: 600;
   outline: none;
-  color: #959595;
+  color: rgb(39, 38, 38);
   outline: none;
   user-select: none;
+
 }
