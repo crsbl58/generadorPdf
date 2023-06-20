@@ -25,6 +25,7 @@ const generatePdf = async (req: any, res: any) => {
         border:solid .1rem black;
         background-color:rgb(212, 212, 212);
         border-radius: 0 0 .5rem 0;
+        color:red;
         }
         h3{
           margin: 2rem 0 0 2rem;
