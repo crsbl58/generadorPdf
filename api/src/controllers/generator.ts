@@ -39,11 +39,11 @@ const generatePdf = async (req: any, res: any) => {
       font-size:1.3rem;
         }
       .tdTitle{
-         border:solid .05rem black;
+         border:solid .1rem black;
          font-size:1rem;
         }
         .tdResponse{
-          border-bottom: .05rem solid black;
+          border-bottom: .1rem solid black;
           width:25rem;
           font-size:1rem;
          }
@@ -53,14 +53,13 @@ const generatePdf = async (req: any, res: any) => {
          }
 
       img{
-        margin:0 0 0 30rem;
+        margin:0 0 0 10rem;
         width:10rem;
         height:15rem
          }
 
          .divContainerImg{
           text-align: center;
-          border:solid .05rem black;
            }
   
 
