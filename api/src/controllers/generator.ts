@@ -31,7 +31,7 @@ const generatePdf = async (req: any, res: any) => {
           margin: 2rem 0 0 2rem;
           font-size:1rem;
           border-bottom:solid .1rem black;
-          width:80vw;
+          width:60vw;
         }
       
       table{
@@ -44,7 +44,7 @@ const generatePdf = async (req: any, res: any) => {
         }
         .tdResponse{
           border-bottom: .1rem solid black;
-          width:25rem;
+          width:15rem;
           font-size:1rem;
          }
         td{
