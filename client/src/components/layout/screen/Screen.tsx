@@ -5,7 +5,6 @@ const Screen = ({
   children,
 }: {
   children: any;
-  background: string;
 }) => {
   return (
     <div
