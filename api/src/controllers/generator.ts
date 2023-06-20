@@ -45,6 +45,16 @@ const generatePdf = async (req: any, res: any) => {
           border-bottom: .1rem solid black;
           width:30rem;
          }
+.tdResponse >  h2{
+  margin:0 0 0 0;
+  padding:0 0 0 0;
+  text-align: left;
+  border:solid .1rem black;
+  background-color:rgb(212, 212, 212);
+  border-radius: 0;
+  font-size:1rem;
+  }
+
         td{
           text-align: left;
           padding:.3rem;
