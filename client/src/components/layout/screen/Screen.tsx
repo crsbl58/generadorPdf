@@ -3,7 +3,6 @@ import styles from "./screen.module.scss";
 
 const Screen = ({
   children,
-  background,
 }: {
   children: any;
   background: string;
@@ -11,7 +10,6 @@ const Screen = ({
   return (
     <div
       style={{
-        background,
       }}
       className={styles.screen}
     >
