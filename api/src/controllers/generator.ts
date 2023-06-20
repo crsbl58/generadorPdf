@@ -45,16 +45,6 @@ const generatePdf = async (req: any, res: any) => {
           border-bottom: .1rem solid black;
           width:30rem;
          }
-.tdResponse >  h2{
-  margin:0 0 0 0;
-  padding:0 0 0 0;
-  text-align: left;
-  border:solid .1rem black;
-  background-color:rgb(212, 212, 212);
-  border-radius: 0;
-  font-size:1rem;
-  }
-
         td{
           text-align: left;
           padding:.3rem;
@@ -78,75 +68,75 @@ const generatePdf = async (req: any, res: any) => {
 <table>
   <tr>
       <td class='tdTitle'>
-        <h3>Nombre Propietario</h3> 
+          Nombre Propietario
       </td>
       <td class='tdResponse'>
-          <h3> ${data.ownerName}</h3>
+          ${data.ownerName}
        </td>
   </tr>
   <tr>
       <td class='tdTitle'>
-            <h3>Dirección</h3> 
+          Dirección
       </td>
       <td class='tdResponse'>
-         <h3> ${data.address}</h3>
+          ${data.address}
        </td>
   </tr>
   <tr>
   <td class='tdTitle'>
-        <h3>Teléfono</h3> 
+      Teléfono
   </td>
   <td class='tdResponse'>
-     <h3> ${data.phone} </h3>
+      ${data.phone}
    </td>
 </tr>
 <tr>
 <td class='tdTitle'>
-     <h3>N° identificación</h3> 
+    N° identificación
 </td>
 <td class='tdResponse'>
-    <h3>${data.identifierNumber}</h3>
+    ${data.identifierNumber}
  </td>
 </tr>
 <tr>
 <td class='tdTitle'>
-    <h3>Nombre Mascota</h3> 
+    Nombre Mascota
 </td>
 <td class='tdResponse'>
-    
+    ${data.petName}
  </td>
 </tr>
 <tr>
 <td class='tdTitle'>
-      <h3>Raza</h3> 
+    Raza
 </td>
 <td class='tdResponse'>
-    <h3>${data.breed}</h3>
+    ${data.breed}
  </td>
 </tr>
 
 <tr>
 <td class='tdTitle'>
-    <h3>Especie</h3> 
+    Especie
 </td>
 <td class='tdResponse'>
-       <h3>${data.species}</h3> 
+    ${data.species}
  </td>
 </tr>
 <tr>
 <td class='tdTitle'>
-   <h3> Fecha nacimiento </h3> 
+    Fecha nacimiento
 </td>
 <td class='tdResponse'>
-     <h3>${data.birthDate}</h3> 
+    ${data.birthDate}
  </td>
 </tr>
 <tr>
 <td class='tdTitle'>
-      <h3>Peso</h3> 
+    Peso
 </td>
 <td class='tdResponse'>
-     <h3>${data.weight}</h3> 
+    ${data.weight}
  </td>
 </tr>
       </table>
