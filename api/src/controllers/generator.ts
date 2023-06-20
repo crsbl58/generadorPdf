@@ -145,6 +145,11 @@ const generatePdf = async (req: any, res: any) => {
   </html>`;
 
   const options = {
+    childProcessOptions: {
+      env: {
+        OPENSSL_CONF: "/dev/null",
+      },
+    },
     format: "Letter",
     border: null,
     margin: {
