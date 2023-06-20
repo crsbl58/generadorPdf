@@ -12,21 +12,24 @@ const generatePdf = async (req: any, res: any) => {
       <title>Ficha de Mascota</title>
     </head>
     <style>
-      
+
     .body{
         width:100%;
         height:100%;
       }
 
-       h1{
-        margin: 2rem 0 0 0;
-      text-align: center;
-       border:solid .1rem black;
-       background-color:rgb(212, 212, 212);
+       h2{
+        margin: 2rem 2rem 0 2rem;
+        padding:.3rem 0 .3rem 0;
+        text-align: center;
+        border:solid .1rem black;
+        background-color:rgb(212, 212, 212);
+        border-radius: 0 0 .5rem 0;
         }
-        h2{
+        h3{
           margin: 2rem 0 0 2rem;
-          border-bottom:solid .3rem black;
+          font-size:1.5rem;
+          border-bottom:solid .1rem black;
           width:80vw;
         }
       
@@ -59,8 +62,8 @@ const generatePdf = async (req: any, res: any) => {
 
     </style>
     <body>
-      <h1>Ficha de Mascota</h1>
-      <h2>Información general</h2>
+      <h2>Ficha de Mascota</h2>
+      <h3>Información general</h3>
 <table>
   <tr>
       <td class='tdTitle'>
