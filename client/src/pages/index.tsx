@@ -1,4 +1,4 @@
-import Generator from "../components/functional/Generator/";
+import Generator from "../components/functional/generator/Index";
 
 const controlPanelPage = () => {
   return <Generator />;
