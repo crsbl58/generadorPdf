@@ -68,75 +68,75 @@ const generatePdf = async (req: any, res: any) => {
 <table>
   <tr>
       <td class='tdTitle'>
-          Nombre Propietario
+        <h3>Nombre Propietario</h3> 
       </td>
       <td class='tdResponse'>
-          ${data.ownerName}
+          <h3> ${data.ownerName}</h3>
        </td>
   </tr>
   <tr>
       <td class='tdTitle'>
-          Dirección
+            <h3>Dirección</h3> 
       </td>
       <td class='tdResponse'>
-          ${data.address}
+         <h3> ${data.address}</h3>
        </td>
   </tr>
   <tr>
   <td class='tdTitle'>
-      Teléfono
+        <h3>Teléfono</h3> 
   </td>
   <td class='tdResponse'>
-      ${data.phone}
+     <h3> ${data.phone} </h3>
    </td>
 </tr>
 <tr>
 <td class='tdTitle'>
-    N° identificación
+     <h3>N° identificación</h3> 
 </td>
 <td class='tdResponse'>
-    ${data.identifierNumber}
+    <h3>${data.identifierNumber}</h3>
  </td>
 </tr>
 <tr>
 <td class='tdTitle'>
-    Nombre Mascota
+    <h3>Nombre Mascota</h3> 
 </td>
 <td class='tdResponse'>
-    ${data.petName}
+    
  </td>
 </tr>
 <tr>
 <td class='tdTitle'>
-    Raza
+      <h3>Raza</h3> 
 </td>
 <td class='tdResponse'>
-    ${data.breed}
+    <h3>${data.breed}</h3>
  </td>
 </tr>
 
 <tr>
 <td class='tdTitle'>
-    Especie
+    <h3>Especie</h3> 
 </td>
 <td class='tdResponse'>
-    ${data.species}
+       <h3>${data.species}</h3> 
  </td>
 </tr>
 <tr>
 <td class='tdTitle'>
-    Fecha nacimiento
+   <h3> Fecha nacimiento </h3> 
 </td>
 <td class='tdResponse'>
-    ${data.birthDate}
+     <h3>${data.birthDate}</h3> 
  </td>
 </tr>
 <tr>
 <td class='tdTitle'>
-    Peso
+      <h3>Peso</h3> 
 </td>
 <td class='tdResponse'>
-    ${data.weight}
+     <h3>${data.weight}</h3> 
  </td>
 </tr>
       </table>
