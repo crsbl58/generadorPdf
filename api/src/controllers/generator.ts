@@ -40,10 +40,12 @@ const generatePdf = async (req: any, res: any) => {
         }
       .tdTitle{
          border:solid .1rem black;
+         font-size:1rem;
         }
         .tdResponse{
           border-bottom: .1rem solid black;
           width:30rem;
+          font-size:1rem;
          }
         td{
           text-align: left;
