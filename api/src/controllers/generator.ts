@@ -44,7 +44,7 @@ const generatePdf = async (req: any, res: any) => {
         }
         .tdResponse{
           border-bottom: .1rem solid black;
-          width:15rem;
+          width:20rem;
           font-size:1rem;
          }
         td{
@@ -144,7 +144,7 @@ const generatePdf = async (req: any, res: any) => {
       </table>
 
     <div class='divContainerImg'>
-      <img src="https://holamascota.com/blogholamascota/wp-content/uploads/2014/04/dog-doctor-chihuahua.jpg" />
+      <img src='https://holamascota.com/blogholamascota/wp-content/uploads/2014/04/dog-doctor-chihuahua.jpg' />
      </div>
 
     </body>
