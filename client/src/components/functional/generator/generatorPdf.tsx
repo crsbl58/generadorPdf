@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useGenerator } from "../../../store/hooks/index";
 
 import Input from "@/components/ui/Input/Input";
+import Image from "next/image";
+import adobeSvg from "../../../../public/svg/adobe.svg";
 
 const GeneratorPdf = () => {
   const { generatePdf } = useGenerator();
@@ -29,7 +31,10 @@ const GeneratorPdf = () => {
 
   return (
     <div className={styles.containerPdf}>
-      <h1>Ficha mascota</h1>
+      <div>
+        <h1>Ficha mascota</h1>
+        <Image height={50} width={50} src={adobeSvg} alt={"adobe"}></Image>
+      </div>
       <div className={styles.containerTablaPdf}>
         <div>
           <div className={styles.groupBox}>

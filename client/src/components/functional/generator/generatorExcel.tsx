@@ -5,6 +5,9 @@ import { useGenerator } from "../../../store/hooks/index";
 
 import Input from "@/components/ui/Input/Input";
 
+import excelSvg from "../../../../public/svg/excel.svg";
+import Image from "next/image";
+
 const GeneratorExcel = () => {
   const { generateExcel } = useGenerator();
 
@@ -24,20 +27,28 @@ const GeneratorExcel = () => {
     { id: 1, date: "23/07/2023", typeExam: "Radiografía", result: "Anormal" },
   ]);
 
-  const changeInputs = (e: any) => {
-    setStateInputExcel({
-      ...stateInputExcel,
-      [e.currentTarget.name]: e.currentTarget.value,
-    });
+  const changeInputs = (e: any, stateValue: boolean) => {
+    
+/*     if (stateValue) {
+      setStateInputExcel({
+        ...stateInputExcel,
+        [e.currentTarget.name]: e.currentTarget.value,
+      });
+    } */
   };
 
   return (
     <div className={styles.containerExcel}>
-      <h1>Examés de mascota</h1>
+      <div>
+        <h1>Examés de mascota</h1>
+        <Image height={50} width={50} src={excelSvg} alt={"excel"}></Image>
+      </div>
+
       <div>
         <div className={styles.groupBox}>
           <h3>Fecha</h3>
           <Input
+            Only="text"
             type="date"
             width="9rem"
             name="date"

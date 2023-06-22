@@ -6,6 +6,10 @@ import { useGenerator } from "../../../store/hooks/index";
 import GeneratorPdf from "./generatorPdf";
 import GeneratorExcel from "./generatorExcel";
 
+
+import documentSvg from '../../../../public/svg/document.svg';
+
+
 const Generator = () => {
   const { pdfStateGenerate, excelStateGenerate } = useGenerator();
 
