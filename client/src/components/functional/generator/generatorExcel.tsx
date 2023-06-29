@@ -16,7 +16,6 @@ const GeneratorExcel = () => {
     typeExam: "",
     result: "",
   });
-
   const [stateArrayExcel, setStateArrayExcel] = useState([
     {
       id: 0,
