@@ -29,12 +29,12 @@ const GeneratorExcel = () => {
 
   const changeInputs = (e: any, stateValue: boolean) => {
     
-/*     if (stateValue) {
+    if (stateValue) {
       setStateInputExcel({
         ...stateInputExcel,
         [e.currentTarget.name]: e.currentTarget.value,
       });
-    } */
+    } 
   };
 
   return (

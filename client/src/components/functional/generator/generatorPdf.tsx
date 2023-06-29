@@ -14,7 +14,7 @@ const GeneratorPdf = () => {
     ownerName: "Cristobal",
     address: "san vicente",
     phone: "546545",
-    identifierNumber: "macho",
+    identifierNumber: "2",
     petName: "pelusa",
     breed: "quiltro",
     species: "perro",
