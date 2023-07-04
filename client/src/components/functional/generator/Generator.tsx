@@ -2,16 +2,14 @@ import { useEffect, useState } from "react";
 import styles from "./Generator.module.scss";
 import { config } from "../../../utils/config";
 
-import { useGenerator } from "../../../store/hooks/index";
+import { useGenerator, useModalLoading } from "../../../store/hooks/index";
+
 import GeneratorPdf from "./generatorPdf";
 import GeneratorExcel from "./generatorExcel";
 
-
-import documentSvg from '../../../../public/svg/document.svg';
-
-
 const Generator = () => {
-  const { pdfStateGenerate, excelStateGenerate } = useGenerator();
+  const { loading, pdfStateGenerate, excelStateGenerate } = useGenerator();
+  const { changeState } = useModalLoading();
 
   useEffect(() => {
     if (pdfStateGenerate === true) {
@@ -40,6 +38,10 @@ const Generator = () => {
         .catch(console.error);
     }
   }, [excelStateGenerate]);
+
+  useEffect(() => {
+    changeState(loading);
+  }, [loading]);
 
   return (
     <div className={styles.container}>
